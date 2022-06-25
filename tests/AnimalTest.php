@@ -57,5 +57,16 @@ final class AnimalTest extends TestCase
             $this->assertEquals($e->getMessage(), "Invalid filepath requested, there's shenaniganz afoot!");
         }
     }
+
+    public function testInvalidAnimal(): void
+    {
+        $a = new Animal("Mr qwerty", "qwertyuiop");
+        $a->get_sound();
+
+        $this->assertEquals(
+            '',
+            $a->get_sound()
+        );
+    }
 }
 ?>
