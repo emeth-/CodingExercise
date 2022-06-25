@@ -16,7 +16,7 @@ $ chmod +x phpunit
 $ php AnimalProject.php "Mr Pickles" cat
 ```
 
-# Test
+# Run Tests
 ```
 $ ./phpunit --bootstrap src/autoload.php tests
 ```
